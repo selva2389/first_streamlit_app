@@ -37,10 +37,10 @@ my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
 my_data_row = my_cur.fetchone()
-streamlit.text("The Fruit list contains:")
+streamlit.text("The Fruit load list contains:")
 streamlit.text(my_data_row)
 
-my_cnx = snowflake.connector.connect(
+
 
 
 # write your own comment -what does the next line do? 
