@@ -51,7 +51,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 
 # --- 
-streamlit.stop()
+
 streamlit.header("The Fruit load list contains:")
 #Snowflake-related functions
 def get_fruit_load_list():
@@ -65,7 +65,7 @@ if streamlit.button('Get Fruit load list'):
   my_data_rows = get_fruit_load_list()
   streamlit.dataframe(my_data_rows)
 
-
+streamlit.stop()
 ## ----
 streamlit.header("What fruit would like to add!")
 add_my_fruit = streamlit.text_input('Thanks for adding fruit','Kiwi')
